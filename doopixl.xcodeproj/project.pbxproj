@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4FE85C521FC0A09100EA9411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE85C511FC0A09100EA9411 /* AppDelegate.swift */; };
-		4FE85C541FC0A09100EA9411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE85C531FC0A09100EA9411 /* ViewController.swift */; };
+		4FE85C541FC0A09100EA9411 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE85C531FC0A09100EA9411 /* MapVC.swift */; };
 		4FE85C571FC0A09100EA9411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE85C551FC0A09100EA9411 /* Main.storyboard */; };
 		4FE85C591FC0A09100EA9411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE85C581FC0A09100EA9411 /* Assets.xcassets */; };
 		4FE85C5C1FC0A09100EA9411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE85C5A1FC0A09100EA9411 /* LaunchScreen.storyboard */; };
+		C6CE6C4F7463F23FDC4F7666 /* Pods_doopixl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768C6FECBB08DE9FE10C4DF /* Pods_doopixl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		456C6C3B4171CBC4730AEBD8 /* Pods-doopixl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doopixl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doopixl/Pods-doopixl.debug.xcconfig"; sourceTree = "<group>"; };
 		4FE85C4E1FC0A09100EA9411 /* doopixl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doopixl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE85C511FC0A09100EA9411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FE85C531FC0A09100EA9411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FE85C531FC0A09100EA9411 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		4FE85C561FC0A09100EA9411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE85C581FC0A09100EA9411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE85C5B1FC0A09100EA9411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE85C5D1FC0A09100EA9411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5768C6FECBB08DE9FE10C4DF /* Pods_doopixl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doopixl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916D4DE7FB4BD817C266388D /* Pods-doopixl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doopixl.release.xcconfig"; path = "Pods/Target Support Files/Pods-doopixl/Pods-doopixl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CE6C4F7463F23FDC4F7666 /* Pods_doopixl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3597D612E70D5FF3EF449FF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5768C6FECBB08DE9FE10C4DF /* Pods_doopixl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4FE85C451FC0A09100EA9411 = {
 			isa = PBXGroup;
 			children = (
 				4FE85C501FC0A09100EA9411 /* doopixl */,
 				4FE85C4F1FC0A09100EA9411 /* Products */,
+				A748473CB980CB722FEEEFBC /* Pods */,
+				3597D612E70D5FF3EF449FF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,63 @@
 		4FE85C501FC0A09100EA9411 /* doopixl */ = {
 			isa = PBXGroup;
 			children = (
+				4FE85C671FC0A1FD00EA9411 /* Utilities */,
+				4FE85C661FC0A1EE00EA9411 /* Extentions */,
+				4FE85C651FC0A1E700EA9411 /* Model */,
+				4FE85C641FC0A1DD00EA9411 /* View */,
+				4FE85C631FC0A1A400EA9411 /* Controller */,
 				4FE85C511FC0A09100EA9411 /* AppDelegate.swift */,
-				4FE85C531FC0A09100EA9411 /* ViewController.swift */,
 				4FE85C551FC0A09100EA9411 /* Main.storyboard */,
 				4FE85C581FC0A09100EA9411 /* Assets.xcassets */,
 				4FE85C5A1FC0A09100EA9411 /* LaunchScreen.storyboard */,
 				4FE85C5D1FC0A09100EA9411 /* Info.plist */,
 			);
 			path = doopixl;
+			sourceTree = "<group>";
+		};
+		4FE85C631FC0A1A400EA9411 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FE85C531FC0A09100EA9411 /* MapVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FE85C641FC0A1DD00EA9411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FE85C651FC0A1E700EA9411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FE85C661FC0A1EE00EA9411 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		4FE85C671FC0A1FD00EA9411 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A748473CB980CB722FEEEFBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				456C6C3B4171CBC4730AEBD8 /* Pods-doopixl.debug.xcconfig */,
+				916D4DE7FB4BD817C266388D /* Pods-doopixl.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FE85C601FC0A09100EA9411 /* Build configuration list for PBXNativeTarget "doopixl" */;
 			buildPhases = (
+				AE062C4AC6EC0935C4A93E77 /* [CP] Check Pods Manifest.lock */,
 				4FE85C4A1FC0A09100EA9411 /* Sources */,
 				4FE85C4B1FC0A09100EA9411 /* Frameworks */,
 				4FE85C4C1FC0A09100EA9411 /* Resources */,
+				541DDFA40F67E7B6F42A5F41 /* [CP] Embed Pods Frameworks */,
+				F77D4B6696E2CEAC6A04F98F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +198,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		541DDFA40F67E7B6F42A5F41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-doopixl/Pods-doopixl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doopixl/Pods-doopixl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE062C4AC6EC0935C4A93E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doopixl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77D4B6696E2CEAC6A04F98F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doopixl/Pods-doopixl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FE85C4A1FC0A09100EA9411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE85C541FC0A09100EA9411 /* ViewController.swift in Sources */,
+				4FE85C541FC0A09100EA9411 /* MapVC.swift in Sources */,
 				4FE85C521FC0A09100EA9411 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +395,7 @@
 		};
 		4FE85C611FC0A09100EA9411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456C6C3B4171CBC4730AEBD8 /* Pods-doopixl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +411,7 @@
 		};
 		4FE85C621FC0A09100EA9411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916D4DE7FB4BD817C266388D /* Pods-doopixl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
